@@ -1,0 +1,21 @@
+# Optional extras for REAL ASR and TTS backends (TAURA_ASR_BACKEND=mms or
+# whisper_finetuned; TAURA_TTS_BACKEND=mms). Not required for the default
+# offline demo (passthrough backends), which is why these are kept out of
+# the core requirements.txt / requirements.lock.txt -- installing torch is a
+# multi-hundred-MB download that the offline demo, CI, and test suite have no
+# need for.
+#
+# Install with:
+#     pip install -r requirements-asr.txt
+#
+# GPU note: this installs the CPU build of torch by default. For CUDA
+# acceleration on a GPU-enabled host (see deploy/zchpc/VM_SIZING.md), follow
+# the install selector at https://pytorch.org/get-started/locally/ instead of
+# this file's torch pin.
+
+torch>=2.2,<3
+transformers>=4.41,<5
+soundfile>=0.12,<0.13
+librosa>=0.10,<0.11
+numpy>=1.26,<2
+scipy>=1.13,<2

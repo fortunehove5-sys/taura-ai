@@ -1,0 +1,42 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+logs/*.log
+.env
+.DS_Store
+node_modules/
+# Environment files and secrets
+.env.*
+!.env.example
+
+# Local databases and runtime data
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated evaluation outputs
+evaluation/results/
+
+# Local model weights and checkpoints
+models/
+checkpoints/
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# User audio and recordings
+recordings/
+audio_uploads/
+*.wav
+*.mp3
+*.m4a
+
+# IDE files
+.vscode/
+.idea/
+Thumbs.db
