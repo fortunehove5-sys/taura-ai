@@ -1,0 +1,3 @@
+This directory holds logs/audit.log, generated at runtime by src/taura/audit_log.py.
+It is intentionally empty in version control (see .gitignore) -- the audit log
+itself should never be committed, since it can contain conversation content.
