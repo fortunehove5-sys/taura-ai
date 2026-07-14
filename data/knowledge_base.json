@@ -1,0 +1,27 @@
+{
+  "_source_note": "SYNTHETIC SAMPLE DATA for demo/testing only. In production this content is written and reviewed by agricultural extension and financial-literacy partners before publication.",
+  "_schema_version": "1.0",
+  "records": [
+    {
+      "id": "KB-GREETING-001",
+      "topic": "greeting",
+      "message_en": "Hello, I am Taura. I can help with crop and livestock prices, weather and flood alerts, or basic savings and loan information. What would you like to know?",
+      "message_sn": "Mhoro, ndini Taura. Ndinogona kubatsira nemitengo yezviyo nemombe, nyaya dzemamiriro ekunze nemvura zhinji, kana ruzivo rwekuchengetedza mari nemakwereti. Ungada kuziva chii?",
+      "message_nd": "Sawubona, ngingu Taura. Ngingakusiza ngamanani ezitshalo lezifuyo, izexwayiso zesimo sezulu lezikhukhula, kumbe ulwazi lokonga imali lezikwelede. Ungathanda ukwazi ini?"
+    },
+    {
+      "id": "KB-HANDOFF-001",
+      "topic": "human_handoff",
+      "message_en": "This needs a person to help you properly. I am connecting you to a Taura support agent who will call or message you shortly.",
+      "message_sn": "Izvi zvinoda munhu kuti akubatsire zvakanaka. Ndiri kukubatanidza nemubatsiri weTaura achakufonera kana kukutumira meseji nekukurumidza.",
+      "message_nd": "Lokhu kudinga umuntu ukusize kahle. Ngikuxhumanisa lomsizi we-Taura ozakufonela kumbe akuthumele umlayezo masinyane."
+    },
+    {
+      "id": "KB-CONSENT-001",
+      "topic": "consent_prompt",
+      "message_en": "Before we start: Taura will save a short record of this conversation (what you asked and the answer given) so we can improve the service and keep a safety record. Do you agree? Reply YES to continue or NO to stop.",
+      "message_sn": "Tisati tatanga: Taura ichachengetedza chidimbu chidiki chehurukuro ino (zvawabvunza nemhinduro yakapiwa) kuti tigone kuvandudza sevhisi uye kuchengeta zvakachengeteka. Unobvuma here? Pindura HONGU kuenderera mberi kana KWETE kumira.",
+      "message_nd": "Singakaqali: uTaura uzagcina umbiko omfitshane walesisikhulumo (lokho okubuzileyo lempendulo enikwe) ukuze sikwazi ukuthuthukisa isevisi njalo sigcine irekhodi lokuphepha. Uyavuma yini? Phendula YEBO ukuqhubeka kumbe HATSHI ukumisa."
+    }
+  ]
+}

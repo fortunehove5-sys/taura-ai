@@ -1,0 +1,72 @@
+{
+  "_source_note": "SYNTHETIC SAMPLE DATA for demo/testing only. In production this file is replaced by a live feed or scheduled ingest from AMA (Agricultural Marketing Authority) and ZIMSTAT commodity price bulletins. Do not treat these figures as real market prices.",
+  "_schema_version": "1.0",
+  "records": [
+    {
+      "id": "PRICE-MAIZE-MUTARE-2026W27",
+      "commodity": "maize",
+      "commodity_aliases": ["chibage", "mangayi", "umbila", "mealie", "mealies"],
+      "location": "Mutare",
+      "unit": "per 50kg bag",
+      "price_usd": 14.50,
+      "price_trend": "up",
+      "week": "2026-W27",
+      "source": "AMA Weekly Bulletin (sample)"
+    },
+    {
+      "id": "PRICE-MAIZE-GOKWE-2026W27",
+      "commodity": "maize",
+      "commodity_aliases": ["chibage", "mangayi", "umbila", "mealie", "mealies"],
+      "location": "Gokwe",
+      "unit": "per 50kg bag",
+      "price_usd": 12.80,
+      "price_trend": "stable",
+      "week": "2026-W27",
+      "source": "AMA Weekly Bulletin (sample)"
+    },
+    {
+      "id": "PRICE-GROUNDNUTS-MUTARE-2026W27",
+      "commodity": "groundnuts",
+      "commodity_aliases": ["nzungu", "indlubu"],
+      "location": "Mutare",
+      "unit": "per 20kg bucket",
+      "price_usd": 9.20,
+      "price_trend": "up",
+      "week": "2026-W27",
+      "source": "AMA Weekly Bulletin (sample)"
+    },
+    {
+      "id": "PRICE-SORGHUM-MASVINGO-2026W27",
+      "commodity": "sorghum",
+      "commodity_aliases": ["mapfunde", "amabele"],
+      "location": "Masvingo",
+      "unit": "per 50kg bag",
+      "price_usd": 11.00,
+      "price_trend": "down",
+      "week": "2026-W27",
+      "source": "AMA Weekly Bulletin (sample)"
+    },
+    {
+      "id": "PRICE-SOYBEANS-HARARE-2026W27",
+      "commodity": "soybeans",
+      "commodity_aliases": ["soya"],
+      "location": "Harare",
+      "unit": "per 50kg bag",
+      "price_usd": 21.40,
+      "price_trend": "stable",
+      "week": "2026-W27",
+      "source": "ZIMSTAT / AMA Weekly Bulletin (sample)"
+    },
+    {
+      "id": "PRICE-MAIZE-BULAWAYO-2026W27",
+      "commodity": "maize",
+      "commodity_aliases": ["chibage", "mangayi", "umbila", "mealie", "mealies"],
+      "location": "Bulawayo",
+      "unit": "per 50kg bag",
+      "price_usd": 13.60,
+      "price_trend": "up",
+      "week": "2026-W27",
+      "source": "AMA Weekly Bulletin (sample)"
+    }
+  ]
+}

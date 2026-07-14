@@ -1,0 +1,36 @@
+{
+  "_source_note": "SYNTHETIC SAMPLE DATA for demo/testing only. In production this file is replaced by a curated feed agreed with a partner mobile money operator (e.g. EcoCash) and/or microfinance institutions under a signed data-sharing agreement. Product names and terms below are illustrative, not real offers.",
+  "_schema_version": "1.0",
+  "records": [
+    {
+      "id": "FIN-SAVINGS-001",
+      "topic": "savings",
+      "name_en": "Mobile money savings pocket",
+      "summary_en": "A savings feature inside your existing mobile money wallet. You set a small weekly target and the app reminds you and locks the amount aside so it is not spent on daily purchases.",
+      "summary_sn": "Chikamu chekuchengetedza mari muwallet yako yemari yefoni. Unosarudza chinangwa chiduku chevhiki uye app inokuyeuchidza uye inochengetedza mari kuti irege kushandiswa pazvinhu zvezuva nezuva.",
+      "summary_nd": "Isici sokongela imali ku-wallet yakho yemali yeselula. Ukhetha umgomo omncane weviki njalo i-app iyakukhumbuza njalo igcina imali ukuze ingasetshenziswa ezintweni zansuku zonke.",
+      "eligibility": "Any registered mobile money user; no minimum balance required to start.",
+      "human_handoff_required": false
+    },
+    {
+      "id": "FIN-LOAN-001",
+      "topic": "micro-loan",
+      "name_en": "Short-term input loan (partner MFI)",
+      "summary_en": "A short-term loan intended for seed, fertiliser or livestock feed, repaid after harvest or sale. Approval depends on your mobile money transaction history. A human loan officer must confirm and finalise any loan.",
+      "summary_sn": "Chikwereti chenguva pfupi chinoitirwa mbeu, fetereza kana chikafu chemombe, chinodzorwa mushure mekukohwa kana kutengesa. Kubvumirwa kunoenderana nezvakaitika mumari yako yefoni. Mukuru wemakwereti anofanira kusimbisa nekugadzirisa chikwereti chega chega.",
+      "summary_nd": "Isikwelede sesikhathi esifushane esenzelwe imbewu, umanyolo kumbe ukudla kwezifuyo, esikhokhwa emva kokuvuna kumbe ukuthengisa. Ukuvunyelwa kuya ngomlando wakho wokuthengiselana ngemali yeselula. Umphathi wesikwelede oyisibili kufanele aqinisekise njalo aphethe loba yisiphi isikwelede.",
+      "eligibility": "At least 6 months of mobile money transaction history; final approval by partner MFI loan officer only.",
+      "human_handoff_required": true
+    },
+    {
+      "id": "FIN-INSURANCE-001",
+      "topic": "insurance",
+      "name_en": "Weather-indexed crop cover (pilot)",
+      "summary_en": "A small, pay-as-you-plant insurance product that pays out automatically if rainfall in your area falls below an agreed threshold during the season, based on the MSD rainfall record for your district.",
+      "summary_sn": "Chikamu chiduku cheinishuwarenzi chekubhadhara paunodyara, chinobhadhara chega kana mvura munzvimbo yako ikaderera pasi pechiyero chakatarwa mumwaka, zvichibva pane zvakanyorwa nemvura neMSD mudunhu rako.",
+      "summary_nd": "Isikhundla esincane se-inshurensi yokukhokha ekuhlanyeleni, esikhokha ngokwazo lapho izulu esifundeni sakho lisiza phansi kwesilinganiso esivunyiweyo ngesikhathi sesizini, kususelwa kurekhodi lezulu le-MSD esigabeni sakho.",
+      "eligibility": "Registered farmer in a pilot district; requires enrolment through a partner cooperative.",
+      "human_handoff_required": true
+    }
+  ]
+}

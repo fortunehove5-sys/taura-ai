@@ -1,0 +1,54 @@
+{
+  "_source_note": "SYNTHETIC SAMPLE DATA for demo/testing only. In production this file is replaced by a live feed or scheduled ingest from the Meteorological Services Department (MSD) and the Department of Civil Protection. Do not treat these as real forecasts or warnings.",
+  "_schema_version": "1.0",
+  "records": [
+    {
+      "id": "ALERT-GOKWE-2026W27",
+      "location": "Gokwe",
+      "alert_type": "dry_spell_watch",
+      "severity": "moderate",
+      "message_en": "Below-normal rainfall expected over the next 10 days. Consider delaying planting of late maize varieties.",
+      "message_sn": "Kunotarisirwa mvura shoma munguva inouya yemazuva gumi. Fungai kunonotsa kudyara chibage chinononoka kuibva.",
+      "message_nd": "Izulu elincane lilindelekile ezinsukwini ezilishumi ezizayo. Cabangela ukuphuza ukuhlanyela umbila ophuzayo.",
+      "issued": "2026-07-01",
+      "valid_until": "2026-07-11",
+      "source": "MSD Agromet Advisory (sample)"
+    },
+    {
+      "id": "ALERT-CHIPINGE-2026W27",
+      "location": "Chipinge",
+      "alert_type": "flood_warning",
+      "severity": "high",
+      "message_en": "Heavy rainfall expected in the next 48 hours. Households near rivers and low-lying areas should move valuables and livestock to higher ground.",
+      "message_sn": "Mvura huru inotarisirwa mumaawa makumi mana nemasere anouya. Vagari vari pedyo nenzizi ngavatamise midziyo nemombe kunzvimbo dzakakwirira.",
+      "message_nd": "Izulu elikhulu lilindelekile emahoreni angama-48 azayo. Imizi eseduze lemifula kufanele ithuthele impahla lezifuyo ezindaweni eziphakemeyo.",
+      "issued": "2026-07-05",
+      "valid_until": "2026-07-07",
+      "source": "Department of Civil Protection Flood Bulletin (sample)"
+    },
+    {
+      "id": "ALERT-MASVINGO-2026W27",
+      "location": "Masvingo",
+      "alert_type": "seasonal_outlook",
+      "severity": "informational",
+      "message_en": "Normal to below-normal rainfall is forecast for the remainder of the season. Farmers are advised to prioritise drought-tolerant small grains where possible.",
+      "message_sn": "Mvura inotarisirwa kuve yakajairika kusvika pasi penormal kusvikira mwaka wapera. Varimi vanokurudzirwa kuronga zviyo zvinoshinga kushaikwa kwemvura pavanogona.",
+      "message_nd": "Izulu elilindelekile kusukela ngokujwayelekileyo kusiya ngaphansi kokujwayelekileyo kuze kuphele isikhathi. Abalimi bayacetshiswa ukuqala ngamabele akhula kalula endaweni ezomileyo lapho kungenzeka khona.",
+      "issued": "2026-07-02",
+      "valid_until": "2026-08-01",
+      "source": "MSD Seasonal Outlook (sample)"
+    },
+    {
+      "id": "ALERT-MUTARE-2026W27",
+      "location": "Mutare",
+      "alert_type": "no_alert",
+      "severity": "none",
+      "message_en": "No active weather warnings for this area. Normal planting conditions expected this week.",
+      "message_sn": "Hapana yambiro yemamiriro ekunze parizvino munzvimbo ino. Mamiriro akajairika ekudyara anotarisirwa vhiki rino.",
+      "message_nd": "Akula isexwayiso esisebenzayo sesimo sezulu kulesisigaba. Izimo ezijwayelekileyo zokuhlanyela zilindelekile kulelisonto.",
+      "issued": "2026-07-06",
+      "valid_until": "2026-07-13",
+      "source": "MSD Agromet Advisory (sample)"
+    }
+  ]
+}
