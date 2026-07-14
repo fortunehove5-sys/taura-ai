@@ -1,0 +1,30 @@
+# Caddyfile for Taura AI on a ZCHPC HPC Cloud VM.
+#
+# Replace the placeholder domain below with a real one pointed (A/AAAA
+# record) at your VM's ZCHPC-assigned IP address before deploying -- Caddy
+# requests a Let's Encrypt certificate automatically on first request to a
+# real domain and will not do so for a bare IP address or a placeholder.
+#
+# If you don't have a domain yet, replace the line below with your VM's IP
+# address and Caddy will serve plain HTTP (no automatic HTTPS) until you do --
+# fine for an early internal demo, not for a real pilot with end users.
+
+taura.example.org {
+    reverse_proxy taura-backend:8000
+
+    encode gzip
+
+    header {
+        # Basic hardening; adjust if the web demo needs to be embedded elsewhere.
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "SAMEORIGIN"
+        Referrer-Policy "strict-origin-when-cross-origin"
+    }
+
+    log {
+        output file /data/access.log {
+            roll_size 10mb
+            roll_keep 5
+        }
+    }
+}

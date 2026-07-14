@@ -1,0 +1,24 @@
+[Unit]
+Description=Taura AI (docker compose)
+Requires=docker.service
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/opt/taura-ai/app
+User=taura
+Group=docker
+ExecStart=/usr/bin/docker compose -f docker-compose.yml -f deploy/zchpc/docker-compose.zchpc.yml up -d --remove-orphans
+ExecStop=/usr/bin/docker compose -f docker-compose.yml -f deploy/zchpc/docker-compose.zchpc.yml down
+TimeoutStartSec=0
+
+# Restart the whole unit (re-running `up -d`) if it's ever stopped
+# unexpectedly; docker compose itself handles container-level restarts via
+# each service's `restart:` policy.
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,79 @@
+# Deployment override for a ZCHPC HPC Cloud VM (Xen Orchestra). Apply on top
+# of the base docker-compose.yml:
+#
+#   docker compose -f docker-compose.yml -f deploy/zchpc/docker-compose.zchpc.yml up -d
+#
+# This is exactly what deploy/zchpc/taura-backend.service runs.
+#
+# What this override adds over the base compose file:
+#   - Resource limits sized for a modest ZCHPC VM tier (adjust to your actual
+#     allocation -- see deploy/zchpc/VM_SIZING.md)
+#   - JSON log rotation (docker's default log driver has none, and Xen
+#     Orchestra VM disks are not unlimited)
+#   - A Caddy reverse proxy in front of the backend for automatic HTTPS.
+#     ZCHPC's HPC Cloud gives you a VM with a routable IP but no managed
+#     load balancer/ingress (unlike a Kubernetes cluster) -- Caddy is the
+#     simplest way to get a real TLS certificate on a bare VM.
+#   - A named volume for /app/logs so the audit log survives container
+#     recreation (docker compose up --build), independent of the Xen
+#     Orchestra VM-level snapshot described in deploy/zchpc/README.md.
+
+services:
+  taura-backend:
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 4g
+        reservations:
+          cpus: "0.5"
+          memory: 1g
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+    volumes:
+      - taura-logs:/app/logs
+    # Port 8000 stays published for localhost/debugging convenience (same as
+    # the base docker-compose.yml), but is not reachable from outside the VM:
+    # deploy/zchpc/cloud-init.yaml's ufw rules only open 22/80/443. Caddy
+    # (below) is the only externally reachable path to the backend. If you
+    # provision the VM without that cloud-init script, replicate those ufw
+    # rules yourself before going live -- see deploy/zchpc/README.md.
+    expose:
+      - "8000"
+
+    # --- GPU passthrough (optional, only if ZCHPC provisions a GPU-enabled VM) ---
+    # ZCHPC's standard HPC Cloud VM tier is CPU-only; GPU-enabled VMs are a
+    # separate allocation to request explicitly (business@zchpc.ac.zw / your
+    # HPC Cloud account contact) -- confirm availability and the hypervisor's
+    # GPU passthrough support before relying on this. Once available and the
+    # NVIDIA Container Toolkit is installed on the VM, uncomment:
+    #
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/zchpc/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - taura-backend
+
+volumes:
+  taura-logs:
+  caddy-data:
+  caddy-config:

@@ -1,0 +1,17 @@
+version: "3.9"
+
+# Minimal single-service compose file for the offline demo. A production
+# deployment (see written proposal, Section 3.3) adds a vector database
+# service for the RAG index and a Postgres service for the session store /
+# audit log once those move off the local JSON files and JSONL log used here.
+services:
+  taura-backend:
+    build: .
+    image: taura-ai:latest
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.example
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped

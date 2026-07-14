@@ -1,0 +1,63 @@
+#cloud-config
+# Cloud-init user-data for provisioning Taura AI on a ZCHPC HPC Cloud VM
+# (Xen Orchestra, https://cloud.zchpc.ac.zw). Paste this into the VM's
+# cloud-init / user-data field at creation time if the template supports it
+# (Xen Orchestra "Create VM" -> Advanced -> Cloud config), or run the
+# equivalent commands manually over SSH/console after boot -- see
+# deploy/zchpc/README.md for the full runbook either way.
+#
+# Base image assumption: Ubuntu 24.04 LTS (adjust package manager commands if
+# a different template is used).
+
+package_update: true
+package_upgrade: true
+
+packages:
+  - ca-certificates
+  - curl
+  - gnupg
+  - ufw
+  - git
+
+runcmd:
+  # --- Docker Engine + Compose plugin (official install method) ----------
+  - install -m 0755 -d /etc/apt/keyrings
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+  - chmod a+r /etc/apt/keyrings/docker.asc
+  - >
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc]
+    https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable"
+    | tee /etc/apt/sources.list.d/docker.list > /dev/null
+  - apt-get update
+  - apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+  # --- Dedicated, non-root service account --------------------------------
+  - useradd -m -s /bin/bash taura || true
+  - usermod -aG docker taura
+
+  # --- Firewall: allow SSH, HTTP/HTTPS only --------------------------------
+  - ufw allow OpenSSH
+  - ufw allow 80/tcp
+  - ufw allow 443/tcp
+  - ufw --force enable
+
+  # --- Application directory ----------------------------------------------
+  - mkdir -p /opt/taura-ai
+  - chown taura:taura /opt/taura-ai
+
+write_files:
+  - path: /etc/motd.d/taura-ai.motd
+    permissions: "0644"
+    content: |
+      ==========================================================
+       Taura AI -- provisioned via deploy/zchpc/cloud-init.yaml
+       Next steps (see deploy/zchpc/README.md):
+         1. sudo -iu taura
+         2. git clone <your-repo-url> /opt/taura-ai/app
+         3. cd /opt/taura-ai/app && cp .env.example .env
+         4. sudo cp deploy/zchpc/taura-backend.service /etc/systemd/system/
+         5. sudo systemctl enable --now taura-backend
+       Support: support@zchpc.ac.zw / WhatsApp +263 785 005 163
+      ==========================================================
+
+final_message: "Taura AI base VM ready after $UPTIME seconds. See /etc/motd.d/taura-ai.motd."
