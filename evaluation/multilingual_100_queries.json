@@ -1,0 +1,802 @@
+[
+  {
+    "id": "EVAL-001",
+    "language": "sn",
+    "query": "Mhoro",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-002",
+    "language": "sn",
+    "query": "Maswera sei",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-003",
+    "language": "sn",
+    "query": "Makadii",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-004",
+    "language": "sn",
+    "query": "Mangwanani",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-005",
+    "language": "sn",
+    "query": "Ndeipi",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-006",
+    "language": "sn",
+    "query": "mutengo wechibage muMutare",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-007",
+    "language": "sn",
+    "query": "chibage chiri kutengwa nemarii kuMutare",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-008",
+    "language": "sn",
+    "query": "mutengo wemombe kuBulawayo",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-009",
+    "language": "sn",
+    "query": "ndoda kuziva mutengo wechibage",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-010",
+    "language": "sn",
+    "query": "mitengo yezvirimwa iripi",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-011",
+    "language": "sn",
+    "query": "kuzonaya here muGokwe",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-012",
+    "language": "sn",
+    "query": "pane yambiro yemafashamo kuChipinge here",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-013",
+    "language": "sn",
+    "query": "mamiriro ekunze kuGokwe",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-014",
+    "language": "sn",
+    "query": "kusanaya kwemvura kuGokwe",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-015",
+    "language": "sn",
+    "query": "ndipe yambiro yemamiriro ekunze",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-016",
+    "language": "sn",
+    "query": "ndinoda kuziva nezvekuchengetedza mari",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-017",
+    "language": "sn",
+    "query": "ndingachengeta sei mari",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-018",
+    "language": "sn",
+    "query": "ndinoda chikwereti",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-019",
+    "language": "sn",
+    "query": "nditsanangurire inishuwarenzi",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-020",
+    "language": "sn",
+    "query": "ndinoda loan",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-021",
+    "language": "sn",
+    "query": "ndinoda kutaura nemunhu",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-022",
+    "language": "sn",
+    "query": "ndibatanidzei nemushandi",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-023",
+    "language": "sn",
+    "query": "handidi kutaura neAI",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-024",
+    "language": "sn",
+    "query": "ndoda agent",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-025",
+    "language": "sn",
+    "query": "ndipe munhu wekutaura naye",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-026",
+    "language": "nd",
+    "query": "Sawubona",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-027",
+    "language": "nd",
+    "query": "Salibonani",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-028",
+    "language": "nd",
+    "query": "Livukile",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-029",
+    "language": "nd",
+    "query": "Kunjani",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-030",
+    "language": "nd",
+    "query": "Sakubona",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-031",
+    "language": "nd",
+    "query": "inani lomumbila eBulawayo",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-032",
+    "language": "nd",
+    "query": "umbila uthengwa ngamalini eBulawayo",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-033",
+    "language": "nd",
+    "query": "inani lenkomo",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-034",
+    "language": "nd",
+    "query": "ngifuna intengo yezilimo",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-035",
+    "language": "nd",
+    "query": "intengo yomumbila eMutare",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-036",
+    "language": "nd",
+    "query": "isikhukhula eChipinge",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-037",
+    "language": "nd",
+    "query": "lizakuna yini eGokwe",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-038",
+    "language": "nd",
+    "query": "isimo sezulu eGokwe",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-039",
+    "language": "nd",
+    "query": "isixwayiso sesomiso",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-040",
+    "language": "nd",
+    "query": "ngiphe isixwayiso sezulu",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-041",
+    "language": "nd",
+    "query": "ngifuna ukugcina imali",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-042",
+    "language": "nd",
+    "query": "ngidinga imali ebolekwayo",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-043",
+    "language": "nd",
+    "query": "ngichazele nge insurance",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-044",
+    "language": "nd",
+    "query": "ngifuna loan",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-045",
+    "language": "nd",
+    "query": "ngingonga njani imali",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-046",
+    "language": "nd",
+    "query": "ngifuna ukukhuluma lomuntu",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-047",
+    "language": "nd",
+    "query": "ngixhumanise le agent",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-048",
+    "language": "nd",
+    "query": "angifuni ukukhuluma le AI",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-049",
+    "language": "nd",
+    "query": "ngidinga umuntu",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-050",
+    "language": "nd",
+    "query": "ngifuna umsizi ongumuntu",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-051",
+    "language": "en",
+    "query": "Hello",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-052",
+    "language": "en",
+    "query": "Hi Taura",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-053",
+    "language": "en",
+    "query": "Good morning",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-054",
+    "language": "en",
+    "query": "Good afternoon",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-055",
+    "language": "en",
+    "query": "How are you",
+    "expected_intent": "greeting",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-056",
+    "language": "en",
+    "query": "maize price in Mutare",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-057",
+    "language": "en",
+    "query": "what is the cattle price in Bulawayo",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-058",
+    "language": "en",
+    "query": "how much is maize selling for",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-059",
+    "language": "en",
+    "query": "show me crop prices",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-060",
+    "language": "en",
+    "query": "market price for maize",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-061",
+    "language": "en",
+    "query": "will it rain in Gokwe",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-062",
+    "language": "en",
+    "query": "is there a flood warning in Chipinge",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-063",
+    "language": "en",
+    "query": "weather alert for Gokwe",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-064",
+    "language": "en",
+    "query": "is there a drought warning",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-065",
+    "language": "en",
+    "query": "show me climate alerts",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-066",
+    "language": "en",
+    "query": "I want a loan",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-067",
+    "language": "en",
+    "query": "tell me about savings",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-068",
+    "language": "en",
+    "query": "explain insurance",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-069",
+    "language": "en",
+    "query": "what financial products are available",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-070",
+    "language": "en",
+    "query": "help me apply for credit",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-071",
+    "language": "en",
+    "query": "I want to speak to a person",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-072",
+    "language": "en",
+    "query": "connect me to an agent",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-073",
+    "language": "en",
+    "query": "human help please",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-074",
+    "language": "en",
+    "query": "I do not want to talk to AI",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-075",
+    "language": "en",
+    "query": "transfer me to a human",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-076",
+    "language": "mixed",
+    "query": "mutengo wemaize muMutare please",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-077",
+    "language": "mixed",
+    "query": "ngifuna maize price eBulawayo",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-078",
+    "language": "mixed",
+    "query": "what is mutengo wechibage",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-079",
+    "language": "mixed",
+    "query": "show me inani lomumbila",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-080",
+    "language": "mixed",
+    "query": "maize iri how much kuMutare",
+    "expected_intent": "market_price",
+    "expected_source_type": "market_price",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-081",
+    "language": "mixed",
+    "query": "kuzonaya here in Gokwe tomorrow",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-082",
+    "language": "mixed",
+    "query": "isikhukhula warning eChipinge",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-083",
+    "language": "mixed",
+    "query": "weather yakuGokwe yakamira sei",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-084",
+    "language": "mixed",
+    "query": "pane drought alert here",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-085",
+    "language": "mixed",
+    "query": "ngifuna climate alert eGokwe",
+    "expected_intent": "climate_alert",
+    "expected_source_type": "climate_alert",
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-086",
+    "language": "mixed",
+    "query": "ndinoda loan information",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-087",
+    "language": "mixed",
+    "query": "ngifuna insurance info",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-088",
+    "language": "mixed",
+    "query": "help me kuchengetedza mari",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-089",
+    "language": "mixed",
+    "query": "savings ngingaqala njani",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-090",
+    "language": "mixed",
+    "query": "I want chikwereti",
+    "expected_intent": "financial_query",
+    "expected_source_type": "financial_product",
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-091",
+    "language": "mixed",
+    "query": "ndinoda human agent",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-092",
+    "language": "mixed",
+    "query": "connect me lomuntu",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-093",
+    "language": "mixed",
+    "query": "I need munhu wekutaura naye",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-094",
+    "language": "mixed",
+    "query": "ngifuna a real person",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-095",
+    "language": "mixed",
+    "query": "agent please ndibatsire",
+    "expected_intent": "human_handoff",
+    "expected_source_type": null,
+    "expected_escalation": true
+  },
+  {
+    "id": "EVAL-096",
+    "language": "mixed",
+    "query": "tell me a joke",
+    "expected_intent": "unknown",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-097",
+    "language": "mixed",
+    "query": "who won the football match",
+    "expected_intent": "unknown",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-098",
+    "language": "mixed",
+    "query": "write me a poem",
+    "expected_intent": "unknown",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-099",
+    "language": "mixed",
+    "query": "play music",
+    "expected_intent": "unknown",
+    "expected_source_type": null,
+    "expected_escalation": false
+  },
+  {
+    "id": "EVAL-100",
+    "language": "mixed",
+    "query": "what is the capital of France",
+    "expected_intent": "unknown",
+    "expected_source_type": null,
+    "expected_escalation": false
+  }
+]
