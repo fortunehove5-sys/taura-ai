@@ -35,16 +35,16 @@ class Intent(str, Enum):
 _KEYWORDS: dict[Intent, list[str]] = {
     Intent.GREETING: [
         "mhoro", "hesi", "makadii", "salibonani", "sawubona", "unjani",
-        "hello", "hi", "hie", "good morning", "good afternoon",
+        "hello", "hi", "hie", "good morning", "good afternoon", "maswera sei", "mangwanani", "ndeipi", "livukile", "sakubona",
     ],
     Intent.PRICE_QUERY: [
         "mutengo", "mitengo", "muripo", "inani", "amanani", "amanani wentengo",
-        "price", "prices", "cost", "how much",
+        "price", "prices", "cost", "how much", "umbila uthengwa ngamalini", "ngifuna intengo yezilimo", "intengo yomumbila",
     ],
     Intent.CLIMATE_QUERY: [
         "mvura", "kunaya", "kuzonaya", "kunonaya", "mamiriro ekunze", "mafashame",
         "chirimo", "izulu", "isimo sezulu", "isikhukhula", "isomiso",
-        "weather", "rain", "rains", "raining", "flood", "flooding", "drought", "forecast",
+        "weather", "rain", "rains", "raining", "flood", "flooding", "drought", "forecast", "yambiro yemafashamo", "izakuna yini", "isixwayiso sesomiso", "ngiphe isixwayiso sezulu", "show me climate alerts", "climate alert",
     ],
     Intent.FINANCIAL_QUERY: [
         "mari", "chikwereti", "kuchengetedza", "chibhengi", "inishuwarenzi",
@@ -54,7 +54,7 @@ _KEYWORDS: dict[Intent, list[str]] = {
     Intent.HUMAN_HANDOFF: [
         "munhu", "tibatane nemunhu", "ndinoda munhu",
         "umuntu", "ngicela umuntu",
-        "agent", "human", "operator", "speak to someone",
+        "agent", "human", "operator", "speak to someone", "ndibatanidzei nemushandi", "handidi kutaura neai", "ngifuna ukukhuluma lomuntu", "angifuni ukukhuluma le ai", "speak to a person", "do not want to talk to ai", "connect me to someone", "real person",
     ],
     Intent.CONSENT_YES: ["hongu", "ehe", "yebo", "yes", "y"],
     Intent.CONSENT_NO: ["kwete", "hatshi", "no", "n"],
