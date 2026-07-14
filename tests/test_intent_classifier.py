@@ -59,3 +59,17 @@ def test_unknown_for_gibberish():
 def test_empty_string_is_unknown():
     result = classify("")
     assert result.intent == Intent.UNKNOWN
+
+def test_extended_multilingual_greetings():
+    queries = [
+        "Maswera sei",
+        "Mangwanani",
+        "Ndeipi",
+        "Livukile",
+        "Sakubona",
+    ]
+
+    for query in queries:
+        assert classify(query).intent == Intent.GREETING
+
+
