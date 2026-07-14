@@ -1,5 +1,5 @@
 # Taura AI
-
+![Taura AI CI](https://github.com/fortunehove5-sys/taura-ai/actions/workflows/ci.yml/badge.svg)
 **A voice-first AI advisory agent for financial inclusion and climate resilience in Zimbabwe's informal economy.**
 
 *"Taura" — Shona for "speak."*
